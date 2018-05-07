@@ -1,0 +1,24 @@
+# github.com/go-task/task
+
+version: '2'
+
+tasks:
+  default:
+    deps:
+      - build
+
+  build:
+    cmds:
+      - python setup.py build_ext -i
+
+  clean:
+    cmds:
+      - python setup.py clean
+
+  develop:
+    cmds:
+      - pip install --no-deps -e .
+
+  test:
+    cmds:
+      - python tests/main.py
