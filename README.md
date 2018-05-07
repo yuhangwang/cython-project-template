@@ -15,5 +15,5 @@ For Windows, install the awesome task runner named **task** (https://github.com/
 
 ## Notes
 - Using `pip install -e .` is a better method for developing new packages.     
-  see: https://pip.pypa.io/en/stable/reference/pip_install/#requirement-specifiers
+  see: https://pip.pypa.io/en/stable/reference/pip_install
 - `cimport` takes absolute import path
