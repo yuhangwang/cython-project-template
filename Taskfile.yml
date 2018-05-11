@@ -15,6 +15,10 @@ tasks:
     cmds:
       - python setup.py clean
 
+  clear:
+    cmds:
+      - find . | grep -E "(__pycache__|\.pyc|\.pyo|\.so$)" | xargs rm -rf 
+
   develop:
     cmds:
       - pip install --no-deps -e .

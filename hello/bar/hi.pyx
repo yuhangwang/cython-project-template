@@ -1,4 +1,4 @@
-from paxes.foo.hello cimport hello
+from hello.foo.hello cimport hello
 
 cpdef hi():
     return hello("Cython!")

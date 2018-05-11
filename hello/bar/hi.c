@@ -961,8 +961,8 @@ static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'paxes.foo.hello' */
-static PyObject *(*__pyx_f_5paxes_3foo_5hello_hello)(PyObject *, int __pyx_skip_dispatch); /*proto*/
+/* Module declarations from 'hello.foo.hello' */
+static PyObject *(*__pyx_f_5hello_3foo_5hello_hello)(PyObject *, int __pyx_skip_dispatch); /*proto*/
 
 /* Module declarations from 'hello.bar.hi' */
 static PyObject *__pyx_f_5hello_3bar_2hi_hi(int __pyx_skip_dispatch); /*proto*/
@@ -983,7 +983,7 @@ static PyObject *__pyx_pf_5hello_3bar_2hi_hi(CYTHON_UNUSED PyObject *__pyx_self)
 /* Late includes */
 
 /* "hello/bar/hi.pyx":3
- * from paxes.foo.hello cimport hello
+ * from hello.foo.hello cimport hello
  * 
  * cpdef hi():             # <<<<<<<<<<<<<<
  *     return hello("Cython!")
@@ -1002,14 +1002,14 @@ static PyObject *__pyx_f_5hello_3bar_2hi_hi(CYTHON_UNUSED int __pyx_skip_dispatc
  *     return hello("Cython!")             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_5paxes_3foo_5hello_hello(__pyx_kp_s_Cython, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_5hello_3foo_5hello_hello(__pyx_kp_s_Cython, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
   /* "hello/bar/hi.pyx":3
- * from paxes.foo.hello cimport hello
+ * from hello.foo.hello cimport hello
  * 
  * cpdef hi():             # <<<<<<<<<<<<<<
  *     return hello("Cython!")
@@ -1189,8 +1189,8 @@ static int __Pyx_modinit_function_import_code(void) {
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__Pyx_modinit_function_import_code", 0);
   /*--- Function import code ---*/
-  __pyx_t_1 = __Pyx_ImportModule("paxes.foo.hello"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ImportFunction(__pyx_t_1, "hello", (void (**)(void))&__pyx_f_5paxes_3foo_5hello_hello, "PyObject *(PyObject *, int __pyx_skip_dispatch)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportModule("hello.foo.hello"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "hello", (void (**)(void))&__pyx_f_5hello_3foo_5hello_hello, "PyObject *(PyObject *, int __pyx_skip_dispatch)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   Py_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -1374,7 +1374,7 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "hello/bar/hi.pyx":1
- * from paxes.foo.hello cimport hello             # <<<<<<<<<<<<<<
+ * from hello.foo.hello cimport hello             # <<<<<<<<<<<<<<
  * 
  * cpdef hi():
  */
